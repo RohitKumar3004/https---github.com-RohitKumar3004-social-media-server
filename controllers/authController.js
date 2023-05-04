@@ -51,7 +51,6 @@ const loginController = async (req, res) => {
       // return res.status(404).send("User is not registered");
       return res.send(error(404, "User is not registered"));
     }
-
     const matched = await bcrypt.compare(password, user.password);
     if (!matched) {
       // return res.status(403).send("Incorrect password");

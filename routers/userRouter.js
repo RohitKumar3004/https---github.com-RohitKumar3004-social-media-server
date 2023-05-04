@@ -10,4 +10,4 @@ router.get('/getMyInfo', requireUser, userController.getMyInfo)
 router.delete('/', requireUser, userController.deleteMyProfile)
 router.post('/getUserProfile', requireUser, userController.getUserProfile)
 router.put('/', requireUser, userController.updateUserProfile)
-module.exports = router;
+module.exports = router; 

@@ -48,7 +48,7 @@ const likeAndUnlikePost = async (req, res) => {
 
     if (!post) {
       return res.send(error(404, 'post not found'));
-    }
+    } 
     if (post.likes.includes(curUserId)) {
       const index = post.likes.indexOf(curUserId);
       post.likes.splice(index, 1);

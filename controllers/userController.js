@@ -31,7 +31,7 @@ const followOrUnfollowUserController = async (req, res) => {
       } else {
           userToFollow.followers.push(curUserId);
           curUser.followings.push(userIdToFollow);
-    }
+    } 
     await userToFollow.save();
     await curUser.save();
     return res.send(success(200,{user:userToFollow}))

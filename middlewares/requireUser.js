@@ -19,7 +19,7 @@ module.exports = async (req, res, next) => {
       process.env.ACCESS_TOKEN_PRIVATE_KEY
     );
     req._id = decoded._id;
-    next();
+    next(); 
   } catch (err) {
     console.log(err);
     // return res.status(401).send("Invalid access key");

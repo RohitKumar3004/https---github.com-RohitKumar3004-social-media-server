@@ -18,7 +18,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
-const app = express();
+const app = express(); 
 
 //middleware
 app.use(express.json({ limit: "10mb" }));

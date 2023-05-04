@@ -12,7 +12,7 @@ module.exports = async () => {
 
     console.log(`MongoDB connected:) ${connect.connection.host}`);
   } catch (error) {
-    console.log(error);
+    console.log(error); 
     process.exit(1);
   }
 };

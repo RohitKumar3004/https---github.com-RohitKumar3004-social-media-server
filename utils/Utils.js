@@ -16,5 +16,5 @@ const mapPostOutput = (post, userId) => {
     }
 }
 module.exports = {
-    mapPostOutput
+    mapPostOutput 
 }
